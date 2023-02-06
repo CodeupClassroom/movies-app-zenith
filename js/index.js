@@ -3,5 +3,5 @@
     // Before you can use the database, you need to configure the "db" object 
     // with your team name in the "js/movies-api.js" file.
     
-    
+
 })();
