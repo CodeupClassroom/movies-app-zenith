@@ -1,8 +1,10 @@
+import { FirebaseDatabase } from "./firebase-config.js";
+
 // In this project, we will be using a Firebase database to store our movie data.
 // Configuring Firebase is more involved than what is covered in this lesson,
 // so we have provided a class that will handle the configuration for you.
 let db = new FirebaseDatabase({
-    team: "YOUR_TEAM_NAME" // Replace this with your team name
+    team: "merrell" // Replace this with your team name
 });
 
 // You will use the "db" object to make requests to the database very similarly to how you
@@ -45,3 +47,5 @@ const addMovie = async (movie) => {
 
 // Here is where you will create your own functions to further interact with the database.
 // HAPPY CODING!!!
+
+export { getMovies, addMovie }

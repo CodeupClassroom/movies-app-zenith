@@ -3,24 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>Movies App</title>
+    <!-- add favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+<div class="page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="movie-grid">
+                    <!-- START MOVIE CARD -->
+                    <div class="movie-wrapper">
+                        <div class="movie-view">
+                            <div class="movie-poster-wrapper">
+                                <img src="https://image.tmdb.org/t/p/original/sv1xJUazXeYqALzczSZ3O6nkH75.jpg" alt="" class="movie-poster-image">
+                                <div class="movie-poster-hover">
+                                    <div class="movie-actions">
+                                        <div class="movie-action-button">
+                                            Edit
+                                        </div>
+                                        <div class="movie-action-button delete">
+                                            Delete
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Black Panther: Wakanda Forever</h3>
+                            <div class="movie-rating-wrapper">
+                                <div class="rating-stars">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" data-star="full" class="rating-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#FDCE50"></polygon>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" data-star="full" class="rating-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#FDCE50"></polygon>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" data-star="full" class="rating-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#FDCE50"></polygon>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" data-star="half" class="rating-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#FDCE50"/>
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="none" stroke="#FDCE50" stroke-width="2" stroke-linejoin="bevel"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" data-star="outline" class="rating-star">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="none" stroke="#FDCE50" stroke-width="2" stroke-linejoin="bevel"/>
+                                    </svg>
+                                </div>
+                                <div class="movie-rating-votes">180k voters</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END MOVIE CARD -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- The core Firebase JS SDK and Databse library -->
 <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
 
-<!-- A local JS file to store the firebase API Key. WARNING: Do not commit this file -->
-<script src="js/keys.js"></script>
-
-<!-- Utilities and higher level functions to simplify database fetches -->
-<script src="js/firebase-config.js"></script>
-
-<!-- Your local JS file to add functions that interact with the database -->
-<script src="js/movies-api.js"></script>
-
 <!-- Your local JS file to add functions that USE your functions from movies-api.js
     and INTERACT with the DOM -->
-<script src="js/index.js"></script>
+<script type="module" src="js/index.js"></script>
 </body>
 </html>

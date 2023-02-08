@@ -1,3 +1,5 @@
+import { keys } from './keys.js';
+
 const firebaseConfig = {
     apiKey: keys.firebase,
     authDomain: "codeup-zenith.firebaseapp.com",
@@ -122,3 +124,5 @@ class FirebaseDatabase {
         });
     }
 }
+
+export { FirebaseDatabase };
